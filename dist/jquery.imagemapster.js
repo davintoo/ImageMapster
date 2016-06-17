@@ -57,7 +57,6 @@ A jQuery plugin to enhance image maps.
         factory(exports);
     } else if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
-        console.log('factory', factory);
         define(['jquery'], factory);
         jQuery.mapster_when = factory();
     } else {

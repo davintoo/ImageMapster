@@ -810,16 +810,19 @@ A jQuery plugin to enhance image maps.
         return when;
     });
 })(function (factory) {
-    if (typeof define === 'function' && define.amd) {
+    if (typeof exports === 'object') {
+        // CommonJS
+        factory(exports);
+    } else if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
         define(['jquery'], factory);
+        //console.log('factory', typeof factory);
         jQuery.mapster_when = factory();
     } else {
         // Browser globals
         factory(jQuery);
     }
-}
-);
+});
 /*lint-ignore-end*/
 /* ImageMapster core */
 

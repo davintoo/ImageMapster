@@ -61,7 +61,7 @@ A jQuery plugin to enhance image maps.
         jQuery.mapster_when = factory();
     } else {
         // Browser globals
-        factory(root);
+        jQuery.mapster_when = factory(root);
     }
 }(this, function (exports) {
 

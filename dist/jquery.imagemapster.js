@@ -52,17 +52,17 @@ A jQuery plugin to enhance image maps.
 /*lint-ignore-start*/
 
 (function (root, factory) {
-    if (typeof exports === 'object') {
-        // CommonJS
-        factory(exports);
-    } else if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
-        define(['jquery'], factory);
-        jQuery.mapster_when = factory();
-    } else {
+    // if (typeof exports === 'object') {
+    //     // CommonJS
+    //     factory(exports);
+    // } else if (typeof define === 'function' && define.amd) {
+    //     // AMD. Register as an anonymous module.
+    //     define(['jquery'], factory);
+    //     jQuery.mapster_when = factory();
+    // } else {
         // Browser globals
         jQuery.mapster_when = factory(root);
-    }
+    // }
 }(this, function (exports) {
 
         var freeze, reduceArray, slice, undef;
